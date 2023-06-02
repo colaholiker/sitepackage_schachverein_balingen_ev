@@ -1,7 +1,8 @@
 #
 # PageTS for Sitepackage Schachverein Balingen e.V.
 #
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_schachverein_balingen_ev/Configuration/TsConfig/Page/RTE.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_schachverein_balingen_ev/Configuration/TsConfig/Page/TCEFORM.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_schachverein_balingen_ev/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_schachverein_balingen_ev/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
+
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_schachverein_balingen_ev/Configuration/TsConfig/Page/RTE.tsconfig">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_schachverein_balingen_ev/Configuration/TsConfig/Page/TCEFORM.tsconfig">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_schachverein_balingen_ev/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_schachverein_balingen_ev/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
