@@ -1,56 +1,72 @@
-######################
-#### DEPENDENCIES ####
-######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript">
+#protocol = http
+#[globalString = IENV:TYPO3_SSL=1]
+#protocol = https
+#[global]
+
+#host = www.svbalingen.de
+#[globalString = IENV:HTTP_HOST==*dev.svbalingen.de]
+#[like(request.getNormalizedParams().getHttpHost(), '*.dev.svbalingen.de')]
+#host = dev.svbalingen.de
+#[END]
 
 
-##############################
-#### FLUID STYLED CONTENT ####
-##############################
-styles {
-    templates {
-        layoutRootPath = EXT:sitepackage_schachverein_balingen_ev/Resources/Private/Layouts/ContentElements/
-        partialRootPath = EXT:sitepackage_schachverein_balingen_ev/Resources/Private/Partials/ContentElements/
-        templateRootPath = EXT:sitepackage_schachverein_balingen_ev/Resources/Private/Templates/ContentElements/
-    }
-}
 
 
-############
-### PAGE ###
-############
-page {
-     fluidtemplate {
-        layoutRootPath = EXT:sitepackage_schachverein_balingen_ev/Resources/Private/Layouts/Page/
-        partialRootPath = EXT:sitepackage_schachverein_balingen_ev/Resources/Private/Partials/Page/
-        templateRootPath = EXT:sitepackage_schachverein_balingen_ev/Resources/Private/Templates/Page/
-    }
-    meta {
-        description =
-        author =
-        keywords =
-        viewport = width=device-width, initial-scale=1
-        robots = index,follow
-        apple-mobile-web-app-capable = no
-        compatible = IE=edge
-    }
-    tracking {
-        google {
-            trackingID =
-            anonymizeIp = 1
-        }
-    }
-}
+styles.content.imgtext.maxW = 1920
+
+plugin.tx_scriptmerger.javascript.deferLoading = 1
+#plugin.tx_scriptmerger.javascript.enable = 0
+plugin.tx_scriptmerger.javascript.addContentInDocument = 1
+
+plugin.tx_webkitpdf_pi1.pdfLink.pluginPid = 419
+content.defaultHeaderType = 3
+sourceopt.formatHtml = 1
+plugin.rzcolorboxNews.ttnewsSingle = 1
+plugin.rzcolorboxNews.ttnewsList = 1
+plugin.rzcolorboxNews.ttnewsLatest = 1
+plugin.rzcolorbox.transition = fade
+plugin.rzcolorbox.opacity = 0.5
+plugin.autometa.author.enable = 1
+plugin.rzcolorbox.innerWidth = 800px
+styles.content.imgtext.maxWInText = 0
+styles.content.imgtext.linkWrap.width = 800
+styles.content.loginform.pid = 0
+plugin.clmetatags.og_type = sports_team
+plugin.clmetatags.og_title = Schachverein Balingen
+plugin.clmetatags.og_site_name = Schachverein Balingen
+plugin.clmetatags.keywords = Schach, Schachverein, Schachklub, Schachclub, Schachspiel, Balingen, ZAK, Zollernalbkreis, Sport, Verein, Sportverein, Spiel, Spiele
+plugin.clmetatags.description = Internet-Site Schachverein Balingen
+plugin.clmetatags.contact = webmaster@svbalingen.de
+plugin.clmetatags.copyright = webmaster@svbalingen.de
+plugin.clmetatags.author = webmaster@svbalingen.de
+plugin.autometa.description.enable = 1
+plugin.tx_dsbdwzlist_pi1.zps = 0
+plugin.tx_dsbdwzlist_pi1.libraries.jquery.load = 0
+config.tx_piwik.trackBackendUsers = 1
+config.tx_piwik.piwik_host = piwik.svbalingen.de
+plugin.tx_megooglecalendar.settings.useCurl = 0
+plugin.t3colorbox.theme = 1
+plugin.t3colorbox.slideshow = 0
+plugin.t3colorbox.imagegroup = 3
+plugin.tx_megooglecalendar.persistence.storagePid = 7
+plugin.tx_megooglecalendar.settings.recursive = 9
+plugin.tx_seodynamictag.default.author = webmaster@svbalingen.de
+plugin.tx_seodynamictag.default.description = Bietet Informationen zum Spielbetrieb, zu Mannschaften und Turnieren.
+plugin.tx_seodynamictag.keywords.default = Schach, Schachverein, Schachklub, Schachclub, Schachspiel, Balingen, ZAK, Zollernalbkreis, Sport, Verein, Sportverein, Spiel, Spiele
+plugin.tx_seodynamictag.keywords.positiveList = Schach, Schachverein, Schachklub, Schachclub, Schachspiel, Balingen, ZAK, Zollernalbkreis, Sport, Verein, Sportverein, Spiel, Spiele
+config.tx_piwik.piwik_idsite = 0
+sourceopt.enabled = 1
 
 
-##############
-### CONFIG ###
-##############
-config {
-    no_cache = 0
-    removeDefaultJS = 0
-    admPanel = 1
-    prefixLocalAnchors = all
-    headerComment = build by sitepackagebuilder.com
-    sendCacheHeaders = 1
-}
+
+
+plugin.tx_newsslider.view.templateRootPath = fileadmin/templates/svbalingen.20160630/tmpl/newsslider/Resources/Private/Templates/
+plugin.tx_newsslider.view.partialRootPath = fileadmin/templates/svbalingen.20160630/tmpl/newsslider/Resources/Private/Partials/
+plugin.tx_news.settings.sitemap.startingpoint = 0
+plugin.tx_news.settings.sitemap.detailPid = 0
+#plugin.tx_news.view.partialRootPath = fileadmin/templates/svbalingen.20160630/tmpl/Resources/Private/Partials
+plugin.tx_bootstrapcore.theme.lightboxCssFile =
+plugin.tx_bootstrapcore.theme.lightboxJsFile =
+plugin.tx_megooglecalendar.settings.jsLibsPosition = includeJSlibs
+plugin.tx_megooglecalendar.settings.jsPosition = includeJS
+plugin.tx_gomapsext.settings.apiKey = AIzaSyD6gcSV0GRskUY7pFhTkM9QtGwNwxfUkKU
