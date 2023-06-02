@@ -1,1 +1,4 @@
-# sitepackage_schachverein_balingen_ev
+Sitepackage for the project "Sitepackage Schachverein Balingen e.V."
+==============================================================
+
+Add some explanation here.
