@@ -69,4 +69,3 @@ plugin.tx_bootstrapcore.theme.lightboxCssFile =
 plugin.tx_bootstrapcore.theme.lightboxJsFile =
 plugin.tx_megooglecalendar.settings.jsLibsPosition = includeJSlibs
 plugin.tx_megooglecalendar.settings.jsPosition = includeJS
-plugin.tx_gomapsext.settings.apiKey = AIzaSyD6gcSV0GRskUY7pFhTkM9QtGwNwxfUkKU
