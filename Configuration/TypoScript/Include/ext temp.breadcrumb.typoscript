@@ -1,0 +1,23 @@
+temp.breadcrumb = COA
+temp.breadcrumb {
+
+    20 = HMENU
+    20 {
+        special = rootline
+        #special.range = 0|3
+        entryLevel = 0
+
+        1 = TMENU
+        1 {
+            noBlur = 1
+            NO {
+                subst_elementUid = 1
+                allWrap = |&nbsp;-&nbsp; |*| |&nbsp;-&nbsp; |*| |
+                stdWrap.htmlSpecialChars = 1
+                stdWrap.field = title
+            }
+        }
+    }
+
+}
+

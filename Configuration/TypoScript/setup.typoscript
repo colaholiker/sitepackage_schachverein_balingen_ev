@@ -2,6 +2,9 @@
 page.config.contentObjectExceptionHandler = 0
 tt_content.image.20.maxW = 1920
 
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:sitepackage_schachverein_balingen_ev/Configuration/TypoScript/Include" extensions="typoscript">
+
+
 plugin.tx_news.settings.detail.showSocialShareButtons = 0
 plugin.tx_news.settings.detail.media.image.lightbox.enabled = 1
 plugin.tx_news.settings.detail.media.image.lightbox.class = t3colorbox
@@ -27,7 +30,6 @@ plugin.tt_news.pid_list = 312
 
 
 config {
-    linkVars = L(0),type
     doctype = html5
     xmlprologue = none
     htmlTag_setParams = lang="de"
