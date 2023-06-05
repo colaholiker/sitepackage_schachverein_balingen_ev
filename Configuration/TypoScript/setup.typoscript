@@ -153,22 +153,21 @@ page {
         erg_extern.media = all
     }
 
-    includeJSlibs {
-        jquery <
 
-}
-includeJSFooterlibs{
-lightbox <
-}
+    #includeJSlibs {
+    #    jquery <
+    #}
+    #includeJSFooterlibs {
+    #    lightbox <
+    #}
 
-includeJSFooter {
-
-bootstrap_js = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/bootstrap.js
-webslidemenu = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/webslidemenu.js
-nivoslider = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/jquery.nivo.slider.pack.js
-#offcanvas_js = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/offcanvas.js
-main = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/main.js
-}
+    includeJSFooter {
+        bootstrap_js = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/bootstrap.js
+        webslidemenu = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/webslidemenu.js
+        nivoslider = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/jquery.nivo.slider.pack.js
+        #offcanvas_js = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/offcanvas.js
+        main = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/main.js
+    }
 }
 
 
