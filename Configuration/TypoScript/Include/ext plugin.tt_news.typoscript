@@ -1,0 +1,67 @@
+###############################
+# Configuration of tt_news
+###############################
+# Parsing von Links für RTE und NEWS_LINKS einschalten
+plugin.tt_news {
+    general_stdWrap >
+    displaySingle {
+        content_stdWrap.parseFunc < lib.parseFunc_RTE
+        subheader_stdWrap >
+        subheader_stdWrap.wrap = <p class="bold">|</p>
+    }
+}
+
+#plugin.tt_news.general_stdWrap >
+plugin.tt_news.general_stdWrap.parseFunc < lib.parseFunc_RTE
+plugin.tt_news.displayList.date_stdWrap.strftime= %A %d. %B %Y
+plugin.tt_news.dontUseBackPid = 1
+plugin.tt_news.archiveTypoLink.parameter = 5
+plugin.tt_news.backPid = 1
+plugin.tt_news.displayList.imageCount=5
+plugin.tt_news.displaySingle.imageCount=5
+
+plugin.tt_news {
+    _CSS_DEFAULT_STYLE >
+    usePagesRelations = 1
+    usePiBasePagebrowser = 1
+    archiveTitleCObject {
+        10.strftime = %B - %Y
+    }
+    getRelatedCObject {
+        10.1.20.strftime = %d.%m.%y %H:%M
+        10.2.20.strftime = %d.%m.%y %H:%M
+        10.default.20.strftime = %d.%m.%y %H:%M
+    }
+    displaySingle {
+        date_stdWrap.strftime= %d.%m.%Y
+        time_stdWrap.strftime= %H:%M
+        age_stdWrap.age = &nbsp;Minuten | Stunden | Tage | Jahre
+    }
+    displayLatest {
+        date_stdWrap.strftime= %d.%m.%y
+        time_stdWrap.strftime= %H:%M
+    }
+    displayList {
+        date_stdWrap.strftime= %A %d. %B %Y
+        time_stdWrap.strftime= %d.%m.%y %H:%M
+    }
+}
+plugin.tt_news {
+    catOrderBy = title
+    displayCatMenu {
+        catmenuRootIconFile = EXT:tt_news/res/tt_news_cat.gif
+        catmenuNoRootIcon = 0
+        catmenuIconMode = -1
+    }
+}
+plugin.tt_news {
+    pageBrowser {
+        dontLinkActivePage = 1
+        maxPages = 10
+        showRange = 0
+        showPBrowserText = 1
+        showResultCount = 0
+        showFirstLast = 0
+    }
+}
+plugin.tt_news.displayLatest.subheader_stdWrap.crop = 100 | ... | 1

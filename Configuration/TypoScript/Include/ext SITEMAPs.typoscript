@@ -1,0 +1,110 @@
+plugin.tx_seo.config {
+    xmlSitemap {
+        sitemaps {
+            news_aktuell {
+                provider = TYPO3\CMS\Seo\XmlSitemap\RecordsXmlSitemapDataProvider
+                config {
+                    table = tx_news_domain_model_news
+                    sortField = sorting
+                    lastModifiedField = tstamp
+                    pid = 312
+                    recursive = 0
+                    url {
+                        pageId = 20
+                        fieldToParameterMap {
+                            uid = tx_news_pi1[news]
+                        }
+                        additionalGetParameters {
+                            tx_news_pi1.controller = News
+                            tx_news_pi1.action = detail
+                        }
+                        useCacheHash = 1
+                    }
+                }
+            }
+
+            news_archiv_2010 < .news_aktuell
+            news_archiv_2010.config.pid = 313
+            news_archiv_2011 < .news_aktuell
+            news_archiv_2011.config.pid = 512
+            news_archiv_2012 < .news_aktuell
+            news_archiv_2012.config.pid = 719
+            news_archiv_2013 < .news_aktuell
+            news_archiv_2013.config.pid = 918
+            news_archiv_2014 < .news_aktuell
+            news_archiv_2014.config.pid = 1017
+            news_archiv_2015 < .news_aktuell
+            news_archiv_2015.config.pid = 1155
+            news_archiv_2016 < .news_aktuell
+            news_archiv_2016.config.pid = 1271
+            news_archiv_2017 < .news_aktuell
+            news_archiv_2017.config.pid = 1272
+            news_archiv_2018 < .news_aktuell
+            news_archiv_2018.config.pid = 1395
+            news_archiv_2019 < .news_aktuell
+            news_archiv_2019.config.pid = 1396
+            news_archiv_2020 < .news_aktuell
+            news_archiv_2020.config.pid = 1397
+            news_archiv_2021 < .news_aktuell
+            news_archiv_2021.config.pid = 1450
+            news_archiv_2022 < .news_aktuell
+            news_archiv_2022.config.pid = 1451
+            news_archiv_2023 < .news_aktuell
+            news_archiv_2023.config.pid = 1452
+            news_archiv_2024 < .news_aktuell
+            news_archiv_2024.config.pid = 1599
+            news_archiv_2025 < .news_aktuell
+            news_archiv_2025.config.pid = 1600
+            news_archiv_2026 < .news_aktuell
+            news_archiv_2026.config.pid = 1601
+            news_archiv_2027 < .news_aktuell
+            news_archiv_2027.config.pid = 1602
+            news_archiv_2028 < .news_aktuell
+            news_archiv_2028.config.pid = 1603
+            news_archiv_2029 < .news_aktuell
+            news_archiv_2029.config.pid = 1604
+
+
+
+
+            news_ergebnisse_2012_2013 < .news_aktuell
+            news_ergebnisse_2012_2013.config.pid = 608
+            news_ergebnisse_2013_2014 < .news_aktuell
+            news_ergebnisse_2013_2014.config.pid = 820
+            news_ergebnisse_2014_2015 < .news_aktuell
+            news_ergebnisse_2014_2015.config.pid = 955
+            news_ergebnisse_2015_2016 < .news_aktuell
+            news_ergebnisse_2015_2016.config.pid = 1065
+            news_ergebnisse_2016_2017 < .news_aktuell
+            news_ergebnisse_2016_2017.config.pid = 1163
+            news_ergebnisse_2017_2018 < .news_aktuell
+            news_ergebnisse_2017_2018.config.pid = 1242
+            news_ergebnisse_2018_2019 < .news_aktuell
+            news_ergebnisse_2018_2019.config.pid = 1348
+            news_ergebnisse_2019_2020 < .news_aktuell
+            news_ergebnisse_2019_2020.config.pid = 1408
+            news_ergebnisse_2020_2021 < .news_aktuell
+            news_ergebnisse_2020_2021.config.pid = 1442
+            news_ergebnisse_2021_2022 < .news_aktuell
+            news_ergebnisse_2021_2022.config.pid = 1453
+            news_ergebnisse_2022_2023 < .news_aktuell
+            news_ergebnisse_2022_2023.config.pid = 1454
+
+
+            news_ergebnisse_2023_2024 < .news_aktuell
+            news_ergebnisse_2023_2024.config.pid = 1605
+            news_ergebnisse_2024_2025 < .news_aktuell
+            news_ergebnisse_2024_2025.config.pid = 1606
+            news_ergebnisse_2025_2026 < .news_aktuell
+            news_ergebnisse_2025_2026.config.pid = 1607
+            news_ergebnisse_2026_2027 < .news_aktuell
+            news_ergebnisse_2026_2027.config.pid = 1608
+            news_ergebnisse_2027_2028 < .news_aktuell
+            news_ergebnisse_2027_2028.config.pid = 1609
+            news_ergebnisse_2028_2029 < .news_aktuell
+            news_ergebnisse_2028_2029.config.pid = 1610
+            news_ergebnisse_2029_2030 < .news_aktuell
+            news_ergebnisse_2029_2030.config.pid = 1611
+        }
+    }
+}

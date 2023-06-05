@@ -1,0 +1,43 @@
+temp.navbar = COA
+temp.navbar {
+    30 = HMENU
+    30 {
+        1 = TMENU
+        1 {
+            wrap = <ul class="nav navbar-nav">|</ul>
+
+            NO = 1
+            NO.subst_elementUid = 1
+            NO.beforeWrap = <li class="nav nav{elementUid}">|
+            NO.wrapItemAndSub = |</li>
+
+            CUR < .NO
+            CUR.beforeWrap = <li class="nav nav{elementUid} cur active">|
+            CUR.ATagParams = class="cur"
+
+            CURIFSUB < .NO
+            CURIFSUB.beforeWrap = <li class="nav nav{elementUid} cur sub active">|
+            CURIFSUB.ATagParams = class="cur sub"
+
+            ACT < .NO
+            ACT.beforeWrap = <li class="nav{elementUid} act active">|
+            ACT.ATagParams = class="act"
+
+            ACTIFSUB < .NO
+            ACTIFSUB.beforeWrap = <li class="nav nav{elementUid} act sub active">|
+            ACTIFSUB.ATagParams = class="act sub"
+
+            USR < NO
+            USR.beforeWrap = <li class="nav nav{elementUid} usr">|
+            USR.ATagParams = class="usr"
+
+            SPC < .NO
+            SPC.beforeWrap = <li class="nav nav{elementUid} spc">|
+            SPC.ATagParams = class="spc"
+
+            IFSUB < .NO
+            IFSUB.beforeWrap = <li class="nav nav{elementUid} sub">|
+            IFSUB.ATagParams = class="sub"
+        }
+    }
+}

@@ -1,0 +1,79 @@
+temp.webslidemenu = COA
+temp.webslidemenu {
+    wrap = <ul class="mobile-sub wsmenu-list navlevel1">|</ul>
+
+    #20 = TEXT
+    #20.value = <li><a href="/" class="active"><i class="fa fa-home"></i><span class="hometext">&nbsp;&nbsp;Home</span></a></li>
+
+    20 = TEXT
+    20.value = <i class="fa fa-home"></i><span class="hometext">&nbsp;&nbsp;Home</span>
+    20.wrap = <li>|</li>
+    20.typolink.parameter = 1
+    20.typolink.ATagParams = class="active"
+
+    30 = HMENU
+    30 {
+        1 = TMENU
+        1 {
+            expAll = 1
+
+
+            NO = 1
+            NO.subst_elementUid = 1
+            NO.beforeWrap = <li class="nav{elementUid}">|
+            NO.wrapItemAndSub = |</li>
+
+            CUR < .NO
+            CUR.beforeWrap = <li class="nav{elementUid} cur active">|
+            CUR.ATagParams = class="cur"
+
+            CURIFSUB < .NO
+            CURIFSUB.beforeWrap = <li class="nav{elementUid} cur sub active">|
+            CURIFSUB.ATagParams = class="cur sub"
+
+            ACT < .NO
+            ACT.beforeWrap = <li class="nav{elementUid} act active">|
+            ACT.ATagParams = class="act"
+
+            ACTIFSUB < .NO
+            ACTIFSUB.beforeWrap = <li class="nav{elementUid} act sub active">|
+            ACTIFSUB.ATagParams = class="act sub"
+
+            USR < NO
+            USR.beforeWrap = <li class="nav{elementUid} usr">|
+            USR.ATagParams = class="usr"
+
+            SPC < .NO
+            SPC.beforeWrap = <li class="nav{elementUid} spc">|
+            SPC.ATagParams = class="spc"
+
+            IFSUB < .NO
+            IFSUB.beforeWrap = <li class="nav{elementUid} sub">|
+            IFSUB.ATagParams = class="sub"
+        }
+
+        2 < .1
+        2.wrap = <ul class="wsmenu-submenu navlevel2">|</ul>
+
+        3 < .1
+        3.wrap = <ul class="wsmenu-submenu-sub navlevel3">|</ul>
+
+        4 < .1
+        4.wrap = <ul class="wsmenu-submenu-sub-sub navlevel4">|</ul>
+
+        5 < .1
+        5.wrap = <ul class="wsmenu-submenu-sub-sub navlevel5">|</ul>
+
+        6 < .1
+        6.wrap = <ul class="wsmenu-submenu-sub-sub navlevel6">|</ul>
+
+        7 < .1
+        7.wrap = <ul class="wsmenu-submenu-sub-sub navlevel7">|</ul>
+
+        8 < .1
+        8.wrap = <ul class="wsmenu-submenu-sub-sub navlevel8">|</ul>
+
+        9 < .1
+        9.wrap = <ul class="wsmenu-submenu-sub-sub navlevel9">|</ul>
+    }
+}

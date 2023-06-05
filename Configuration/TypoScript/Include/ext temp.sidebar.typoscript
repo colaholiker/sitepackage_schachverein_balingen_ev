@@ -1,0 +1,59 @@
+temp.sidebar = COA
+temp.sidebar {
+    30 = HMENU
+    30 {
+        entryLevel = 1
+        expAll = 1
+
+        1 = TMENU
+        1 {
+            wrap = <ul class="nav navlevel1">|</ul>
+
+            NO = 1
+            NO.subst_elementUid = 1
+            NO.beforeWrap = <li class="nav nav{elementUid}">|
+            NO.wrapItemAndSub = |</li>
+
+            CUR < .NO
+            CUR.beforeWrap = <li class="nav nav{elementUid} cur">|
+            CUR.ATagParams = class="cur"
+
+            CURIFSUB < .NO
+            CURIFSUB.beforeWrap = <li class="nav nav{elementUid} cur sub">|
+            CURIFSUB.ATagParams = class="cur sub"
+
+            ACT < .NO
+            ACT.beforeWrap = <li class="nav{elementUid} act">|
+            ACT.ATagParams = class="act"
+
+            ACTIFSUB < .NO
+            ACTIFSUB.beforeWrap = <li class="nav nav{elementUid} act sub">|
+            ACTIFSUB.ATagParams = class="act sub"
+
+            USR < NO
+            USR.beforeWrap = <li class="nav nav{elementUid} usr">|
+            USR.ATagParams = class="usr"
+
+            SPC < .NO
+            SPC.beforeWrap = <li class="nav nav{elementUid} spc">|
+            SPC.ATagParams = class="spc"
+
+            IFSUB < .NO
+            IFSUB.beforeWrap = <li class="nav nav{elementUid} sub">|
+            IFSUB.ATagParams = class="sub"
+        }
+
+        2 < .1
+        2.wrap = <ul class="nav navlevel2">|</ul>
+
+        3 < .1
+        3.wrap = <ul class="nav navlevel3">|</ul>
+
+        4 < .1
+        4.wrap = <ul class="nav navlevel4">|</ul>
+
+        5 < .1
+        5.wrap = <ul class="nav navlevel5">|</ul>
+
+    }
+}

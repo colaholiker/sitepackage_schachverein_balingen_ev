@@ -1,0 +1,24 @@
+###################################################
+## lib.nav (Button Navigation in Header)
+###################################################
+temp.buttonnav = COA
+temp.buttonnav {
+    20 = HMENU
+    20 {
+        #wrap = <ul>|</ul>
+        entryLevel = 0
+        1 = TMENU
+        1 {
+            noBlur = 1
+            wrap = <ul>|</ul>
+            NO = 1
+            NO.ATagTitle.field = abstract // description // subtitle
+            NO.allWrap = <li>|</li>
+            NO.ATagBeforeWrap = 1
+            NO.stdWrap.htmlSpecialChars = 1
+            ACT = 1
+            ACT < .NO
+            ACT.allWrap = <li class="active">|</li>
+        }
+    }
+}
