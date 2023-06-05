@@ -68,18 +68,18 @@ page {
 
     10 = FLUIDTEMPLATE
     10 {
-        layoutRootPath = fileadmin/templates/svbalingen.20160630/tmpl/backend_layout/Layouts/
-        partialRootPath = fileadmin/templates/svbalingen.20160630/tmpl/backend_layout/Partials/
+        layoutRootPath = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/tmpl/backend_layout/Layouts/
+        partialRootPath = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/tmpl/backend_layout/Partials/
 
         file.cObject = CASE
         file.cObject {
             key.data = levelfield:-1, backend_layout_next_level, slide
             key.override.field = backend_layout
             default = TEXT
-            #default.value = fileadmin/templates/svbalingen.20160630/tmpl/backend_layout/tmpl_default.html
+            #default.value = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/tmpl/backend_layout/tmpl_default.html
             default.value = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/tmpl/backend_layout/tmpl_default.html
             2 = TEXT
-            2.value = fileadmin/templates/svbalingen.20160630/tmpl/backend_layout/tmpl_default_w_rightcol.html
+            2.value = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/tmpl/backend_layout/tmpl_default_w_rightcol.html
         }
         variables {
             content < styles.content.get
@@ -117,39 +117,39 @@ page {
     }
 
     includeJS {
-        jquery = fileadmin/templates/svbalingen.20160630/js/jquery-3.3.1.min.js
+        jquery = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/jquery-3.3.1.min.js
     }
 
     includeCSS {
-        svbalingen = fileadmin/templates/svbalingen.20160630/css/svbalingen.css
+        svbalingen = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/svbalingen.css
         svbalingen.media = all
 
-        bootstrap = fileadmin/templates/svbalingen.20160630/css/bootstrap.css
+        bootstrap = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/bootstrap.css
         bootstrap.media = all
 
-        bootstrap-theme = fileadmin/templates/svbalingen.20160630/css/bootstrap-theme.css
+        bootstrap-theme = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/bootstrap-theme.css
         bootstrap-theme.media = all
 
         #bootstrap_core = typo3conf/ext/bootstrap_core/Resources/Public/Css/content.css
         #bootstrap_core.media = all
 
-        webslidemenu_theme = fileadmin/templates/svbalingen.20160630/css/color-theme.css
+        webslidemenu_theme = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/color-theme.css
         webslidemenu_theme.media = all
 
-        webslidemenu = fileadmin/templates/svbalingen.20160630/css/webslidemenu.css
+        webslidemenu = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/webslidemenu.css
         webslidemenu.media = all
 
-        nivoslider = fileadmin/templates/svbalingen.20160630/css/nivo-slider.css
+        nivoslider = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/nivo-slider.css
         nivoslider.media = all
 
-        nivoslider_light = fileadmin/templates/svbalingen.20160630/css/nivo-slider-themes/light/light.css
+        nivoslider_light = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/nivo-slider-themes/light/light.css
         nivoslider_light.media = all
 
-        fontawesome = fileadmin/templates/svbalingen.20160630/fonts/font-awesome/css/font-awesome.min.css
+        fontawesome = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/fonts/font-awesome/css/font-awesome.min.css
         fontawesome.media = all
 
         #erg_extern = https://css.svw.info/my_patches_20081229/ed.css
-        erg_extern = fileadmin/templates/svbalingen.20160630/css/ed.css
+        erg_extern = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/ed.css
         erg_extern.media = all
     }
 
@@ -163,11 +163,11 @@ lightbox <
 
 includeJSFooter {
 
-bootstrap_js = fileadmin/templates/svbalingen.20160630/js/bootstrap.js
-webslidemenu = fileadmin/templates/svbalingen.20160630/js/webslidemenu.js
-nivoslider = fileadmin/templates/svbalingen.20160630/js/jquery.nivo.slider.pack.js
-#offcanvas_js = fileadmin/templates/svbalingen.20160630/js/offcanvas.js
-main = fileadmin/templates/svbalingen.20160630/js/main.js
+bootstrap_js = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/bootstrap.js
+webslidemenu = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/webslidemenu.js
+nivoslider = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/jquery.nivo.slider.pack.js
+#offcanvas_js = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/offcanvas.js
+main = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/js/main.js
 }
 }
 
