@@ -1,0 +1,154 @@
+/* headerbackground */
+.headerbackground {
+	background-image: url(../../old.20230605/svbalingen.20160630/image/schach_header.20160819.jpg) !important;
+	background-position: center;
+	background-repeat: repeat-x;
+
+	min-height:53px;
+}
+
+.headerbackground .image {
+	margin-bottom: 0px;
+}
+
+.headImg1 {
+	margin-bottom: -20px;
+ 	margin-top: -20px;
+	margin-left: -80px;
+}
+
+
+/* Bildunterschrieft im Bild und durchsichtig */
+figure {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+figcaption {
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 10px;
+  padding: 10px 20px !important;
+
+  opacity: 1;
+  bottom: 0;
+  left: 0;
+}
+
+.smallogo {
+  opacity:0.5;
+  width:60px !important;
+}
+
+.wsmenu {
+  float:left !important;
+}
+
+.navbar-inverse {
+  border-radius:0px !important;
+}
+
+.wsmenu-list li:last-child a {
+  border-radius:0px !important;
+  -webkit-border-radius:0px !important;
+}
+
+.footer .navbar-nav > li > a {
+        padding-top: 2px;
+        padding-bottom: 2px;
+}
+
+.tranbg > .wsmenu-list > li > a.active {
+	background: #F6BB42 !important;	
+}
+
+.wsmenu-list ul {
+	box-shadow: 0px 0px 8px #888;
+	z-index:3;
+}
+
+.wsmenu-list ul li a {
+	/*margin-right: 20px;*/
+}
+
+#main {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.news ul.category-menu-view li ul {
+	display:none;
+}
+
+.news .news-menu-view ul li ul {
+	display:block !important;
+}
+
+.wsmenu {
+	z-index:9999;
+}
+
+@media only screen and (min-width: 781px) {
+	.menu-arrow-2 > a:after{
+		-moz-border-bottom-colors:none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+	 	border-color: transparent transparent transparent #c1c1c1;
+		border-image: none;
+		border-style: solid;
+		border-width: 4px;
+		top:14px;
+		content: "";
+		margin-top: 0;
+		position: absolute;
+		right:10px;
+		z-index: 11111;
+	}
+
+	.arrowleft > .menu-arrow-2 > a:after{
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+		border-color: transparent #c1c1c1 transparent transparent;
+		border-image: none;
+		border-style: solid;
+		border-width: 4px;
+		top:14px;
+		content: "";
+		margin-top: 0;
+		position: absolute;
+		right:auto !important;
+		left:10px !important;
+		z-index: 11111; float:left;
+	}
+}
+
+.wsmenu-click02,
+.wsmenu-click {
+	width: auto !important;
+}
+
+.wsmenu-list ul {
+	margin-bottom: 2px !important;
+}
+
+.wsmenu li a {
+	height: auto !important;
+}
+
+.tx_newsslider {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.navbar-nav > li {
+	float: left;
+}
+
+.ce-uploads-element {
+	overflow: auto;
+}

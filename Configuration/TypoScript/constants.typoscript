@@ -60,11 +60,8 @@ sourceopt.enabled = 1
 
 
 
-plugin.tx_newsslider.view.templateRootPath = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/tmpl/newsslider/Resources/Private/Templates/
-plugin.tx_newsslider.view.partialRootPath = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/tmpl/newsslider/Resources/Private/Partials/
 plugin.tx_news.settings.sitemap.startingpoint = 0
 plugin.tx_news.settings.sitemap.detailPid = 0
-#plugin.tx_news.view.partialRootPath = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/tmpl/Resources/Private/Partials
 plugin.tx_bootstrapcore.theme.lightboxCssFile =
 plugin.tx_bootstrapcore.theme.lightboxJsFile =
 plugin.tx_megooglecalendar.settings.jsLibsPosition = includeJSlibs

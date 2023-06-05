@@ -120,35 +120,35 @@ page {
     }
 
     includeCSS {
-        svbalingen = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/svbalingen.css
+        svbalingen = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/svbalingen.css
         svbalingen.media = all
 
-        bootstrap = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/bootstrap.css
+        bootstrap = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/bootstrap.css
         bootstrap.media = all
 
-        bootstrap-theme = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/bootstrap-theme.css
+        bootstrap-theme = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/bootstrap-theme.css
         bootstrap-theme.media = all
 
         #bootstrap_core = typo3conf/ext/bootstrap_core/Resources/Public/Css/content.css
         #bootstrap_core.media = all
 
-        webslidemenu_theme = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/color-theme.css
+        webslidemenu_theme = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/color-theme.css
         webslidemenu_theme.media = all
 
-        webslidemenu = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/webslidemenu.css
+        webslidemenu = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/webslidemenu.css
         webslidemenu.media = all
 
-        nivoslider = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/nivo-slider.css
+        nivoslider = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/nivo-slider.css
         nivoslider.media = all
 
-        nivoslider_light = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/nivo-slider-themes/light/light.css
+        nivoslider_light = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/nivo-slider-themes/light/light.css
         nivoslider_light.media = all
 
-        fontawesome = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/fonts/font-awesome/css/font-awesome.min.css
+        fontawesome = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Fonts/font-awesome/css/font-awesome.min.css
         fontawesome.media = all
 
         #erg_extern = https://css.svw.info/my_patches_20081229/ed.css
-        erg_extern = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/css/ed.css
+        erg_extern = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/ed.css
         erg_extern.media = all
     }
 
