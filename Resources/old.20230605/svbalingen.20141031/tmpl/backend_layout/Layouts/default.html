@@ -1,0 +1,65 @@
+<div class="headerbackground">
+	<div class="container headerlogo image">
+		<f:image src="fileadmin/templates/svbalingen.20141031/image/logo.png" alt="Logo des Schachvereins Balingen e.V." class="headImg1" />
+	</div>
+</div>
+
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	<div class="container">
+
+		<div class="navbar-header">
+
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+		         <div class="pull-left-deak visible-xs navbar-brand">
+				<f:if condition="{sidebar}">
+					<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Unternavigation aufklappen</button>
+				</f:if>
+			</div> 
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<f:format.html parseFuncTSPath="">{navbar}</f:format.html>
+		</div>
+	</div>
+</nav>
+
+<div id="breadcrumb" class="container">
+	<div class="row">
+				<div class="col-xs-6 col-sm-3">
+				</div>
+				<div class="col-xs-12 col-sm-9">
+					<f:format.html parseFuncTSPath="">{breadcrumb}</f:format.html>
+				</div>
+	</div>
+</div>
+
+<div id="main" class="container theme-showcase" role="main">
+	<div class="row row-offcanvas row-offcanvas-left">
+		<f:if condition="{sidebar}">
+			<f:then>
+				<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+					<f:format.html parseFuncTSPath="">{sidebar}</f:format.html>
+				</div>
+				<div class="col-xs-12 col-sm-9"> 
+					<f:render section="content" />
+				</div>	
+			</f:then>
+			<f:else>
+				<div class="col-xs-12">
+					<f:render section="content" />
+				</div>
+			</f:else>
+		</f:if>
+	</div>
+</div>
+
+<footer class="footer navbar-inverse navbar-fixed-bottom">
+	<div class="container">
+		 <f:format.html parseFuncTSPath="">{navfooter}</f:format.html>
+	</div>
+</footer>

@@ -1,0 +1,110 @@
+/* headerbackground */
+.headerbackground {
+	background-image: url(../image/Schach_Header_01.jpg) !important;
+	background-position: center;
+	background-repeat: repeat-x;
+}
+.headerbackground .image {
+	margin-bottom: 0px;
+}
+.headImg1 {
+	margin-bottom: -20px;
+	margin-top: -20px;
+	margin-left: -80px;
+}
+
+#content {
+	padding-bottom: 30px;
+}
+
+/* Bildunterschrieft im Bild und durchsichtig */
+figure {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+figcaption {
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 10px;
+  padding: 10px 20px !important;
+
+  opacity: 1;
+  bottom: 0;
+  left: 0;
+}
+
+
+/* sidebar - navigation */
+#sidebar a {
+	color: #333;
+	font-weight: bold;
+}
+#sidebar .nav li a:hover {
+	background-color: #D4D4D4; 
+}
+#sidebar .nav li {
+	border-bottom:1px solid black; 
+}
+#sidebar .nav li:last-child {
+	border-bottom: 0px;
+}
+
+/* breadcrumb */
+#breadcrumb {
+	padding-bottom: 15px;
+}
+
+.footer .navbar-nav > li > a {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#main {
+	padding-bottom: 40px;
+}
+
+.img-center-outer {
+	float:none !important;
+}
+
+.contenttable-100 {
+	white-space: nowrap;
+}
+
+.navbar-nav li {
+	float: left !important;
+}
+
+ul.navlevel1 li a {
+	background-color:#f7f7f7;
+}
+
+ul.navlevel2 li a {
+	padding-left: 30px;
+	background-color:#efefef;
+}
+
+ul.navlevel3 li a {
+	padding-left: 45px;
+	background-color:#e6e6e6;
+}
+
+ul.navlevel4 li a {
+	padding-left: 60px;
+	background-color:#dedede;
+}
+
+ul.navlevel5 li a {
+	padding-left: 75px;
+	background-color:#d5d5d5;
+}
+
+ul.navlevel2 li:first-child,
+ul.navlevel3 li:first-child,
+ul.navlevel4 li:first-child,
+ul.navlevel5 li:first-child {
+	border-top: 1px solid black;
+}

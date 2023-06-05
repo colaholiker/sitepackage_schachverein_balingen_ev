@@ -1,0 +1,59 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers" data-namespace-typo3-fluid="true">
+	
+<f:layout name="Customslider" />
+<f:section name="Customslider">
+
+	<f:comment>
+		<f:debug title="Results of all">{_all}</f:debug>
+		<f:debug title="Results of settings.customslider">{settings.customslider}</f:debug>
+	</f:comment>
+
+	<div class="tx_newsslider slider-wrapper theme-light" style="max-width:{settings.customslider.width}px; height:auto;">
+		<div class="ribbon"></div>
+		<div id="slider_{contentObjectData.uid}" class="nivoSlider">	
+			<f:for each="{news}" as="newsItem" iteration="i">
+				<f:alias map="{mediaElement: newsItem.falMediaPreviews.0}">
+					<f:if condition="{newsItem.falMediaPreviews}">
+						<f:then>
+							<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+								<f:image src="{mediaElement.uid}" treatIdAsReference="1"
+									title="{f:if(condition: '{settings.nivoslider.captions}',then: '#htmlcaption-{i.cycle}')}"
+									alt="{mediaElement.originalResource.alternative}"
+									width="{settings.customslider.width}c"
+									height="{settings.customslider.height}c"
+									class="img-responsive" />
+							</n:link>
+						</f:then>
+						<f:else>
+							<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+								<f:image src="{settings.list.media.dummyImage}"
+									title="{f:if(condition: '{settings.nivoslider.captions}',then: '#htmlcaption-{i.cycle}')}"
+									alt="{mediaElement.originalResource.alternative}"
+									width="{settings.customslider.width}c"
+									height="{settings.customslider.height}c"
+									class="img-responsive" />
+							</n:link>
+						</f:else>
+					</f:if>
+				</f:alias>
+			</f:for>
+		</div>
+	</div>
+
+	<f:for each="{news}" as="newsItem" iteration="i">
+		<div id="htmlcaption-{i.cycle}" class="nivo-html-caption">
+			<h4 class="caption-title {f:if(condition:'{newsItem.istopnews}', then:' topnews')}" style="margin:0;"><n:link newsItem="{newsItem}" settings="{settings}"> {newsItem.title}</n:link></h4>
+			<span class="caption hidden-xs ">
+				<f:if condition="{newsItem.teaser}">
+					<f:then>
+						{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+					</f:then>
+					<f:else>
+						{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+					</f:else>
+				</f:if>
+			</span>
+		</div>
+	</f:for>
+</f:section>
+</html>
