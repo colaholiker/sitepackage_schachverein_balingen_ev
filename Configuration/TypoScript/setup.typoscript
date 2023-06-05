@@ -8,8 +8,8 @@ tt_content.image.20.maxW = 1920
 plugin.tx_news.settings.detail.showSocialShareButtons = 0
 plugin.tx_news.settings.detail.media.image.lightbox.enabled = 1
 plugin.tx_news.settings.detail.media.image.lightbox.class = t3colorbox
-plugin.tx_news.settings.list.media.dummyImage = fileadmin/user_upload/img/Schach-Comic-neu.png
-plugin.tx_newsslider.settings.list.media.dummyImage = fileadmin/user_upload/img/Schach-Comic-neu.png
+plugin.tx_news.settings.list.media.dummyImage = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Images/logos/Schach-Comic-neu.webp
+plugin.tx_newsslider.settings.list.media.dummyImage = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Images/logos/Schach-Comic-neu.webp
 plugin.tx_newsslider.settings.displayDummyIfNoMedia = 1
 
 plugin.tt_news.useSubCategories = 0
@@ -64,7 +64,7 @@ page {
     #config.noPageTitle = 2
     config.index_enable = 1
 
-    shortcutIcon = fileadmin/user_upload/img/favicon.ico
+    shortcutIcon = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Images/logos/favicon.ico
 
     10 = FLUIDTEMPLATE
     10 {
@@ -76,7 +76,6 @@ page {
             key.data = levelfield:-1, backend_layout_next_level, slide
             key.override.field = backend_layout
             default = TEXT
-            #default.value = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/tmpl/backend_layout/tmpl_default.html
             default.value = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/tmpl/backend_layout/tmpl_default.html
             2 = TEXT
             2.value = EXT:sitepackage_schachverein_balingen_ev/Resources/old.20230605/svbalingen.20160630/tmpl/backend_layout/tmpl_default_w_rightcol.html
