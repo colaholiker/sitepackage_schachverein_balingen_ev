@@ -129,9 +129,6 @@ page {
         bootstrap-theme = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/bootstrap-theme.css
         bootstrap-theme.media = all
 
-        #bootstrap_core = typo3conf/ext/bootstrap_core/Resources/Public/Css/content.css
-        #bootstrap_core.media = all
-
         webslidemenu_theme = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/color-theme.css
         webslidemenu_theme.media = all
 
@@ -155,16 +152,10 @@ page {
     includeJSFooter {
         bootstrap_js = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/JavaScript/bootstrap.js
         webslidemenu = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/JavaScript/webslidemenu.js
-        nivoslider = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/JavaScript/jquery.nivo.slider.pack.js
+        #nivoslider = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/JavaScript/jquery.nivo.slider.pack.js
         #offcanvas_js = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/JavaScript/offcanvas.js
-        main = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/JavaScript/main.js
+        #main = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/JavaScript/main.js
     }
 }
-
-
-
-#plugin.tx_odsosm_pi1.path_openlayers = //openlayers.org/api/
-#plugin.tx_odsosm_pi1.path_openlayers = https://openlayers.org/api/
-#plugin.tx_odsosm_pi1.path_openlayers >
 
 
