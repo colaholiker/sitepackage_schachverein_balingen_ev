@@ -1,6 +1,6 @@
 /* headerbackground */
 .headerbackground {
-	background-image: url(../../old.20230605/svbalingen.20160630/image/schach_header.20160819.jpg) !important;
+	background-image: url(../Images/logos/schach_header.20160819.jpg) !important;
 	background-position: center;
 	background-repeat: repeat-x;
 
@@ -8,7 +8,7 @@
 }
 
 .headerbackground .image {
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .headImg1 {
@@ -47,12 +47,12 @@ figcaption {
 }
 
 .navbar-inverse {
-  border-radius:0px !important;
+  border-radius:0 !important;
 }
 
 .wsmenu-list li:last-child a {
-  border-radius:0px !important;
-  -webkit-border-radius:0px !important;
+  border-radius:0 !important;
+  -webkit-border-radius:0 !important;
 }
 
 .footer .navbar-nav > li > a {
@@ -65,7 +65,7 @@ figcaption {
 }
 
 .wsmenu-list ul {
-	box-shadow: 0px 0px 8px #888;
+	box-shadow: 0 0 8px #888;
 	z-index:3;
 }
 
