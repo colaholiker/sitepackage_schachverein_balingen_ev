@@ -16,7 +16,7 @@
 	<div class="navwrapper navbar-inverse">
 		<div class="container">
 			<nav class="wsmenu pm_buttoncolor2 tranbg">
-				<f:format.html parseFuncTSPath="">{webslidemenu}</f:format.html>
+				<f:format.html>{webslidemenu}</f:format.html>
 			</nav>
 		</div>
 	</div>
@@ -25,7 +25,7 @@
 	<div id="breadcrumb" class="container">
 		<div class="row">
 					<div class="col-xs-12 col-sm-12">
-						<f:format.html parseFuncTSPath="">{breadcrumb}</f:format.html>
+						<f:format.html>{breadcrumb}</f:format.html>
 					</div>
 		</div>
 	</div>
@@ -35,7 +35,7 @@
 			<f:if condition="{sidebar}">
 				<f:then>
 					<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-						<f:format.html parseFuncTSPath="">{sidebar}</f:format.html>
+						<f:format.html>{sidebar}</f:format.html>
 					</div>
 					<div class="col-xs-12 col-sm-9"> 
 						<f:render section="content" />
@@ -53,7 +53,7 @@
 
 <footer class="footer navbar-inverse navbar-fixed-bottom">
 	<div class="container">
-		 <f:format.html parseFuncTSPath="">{navfooter}</f:format.html>
+		 <f:format.html>{navfooter}</f:format.html>
 	</div>
 </footer>
 </html>
