@@ -94,11 +94,11 @@ page {
         }
     }
 
-    headerData.998 = TEXT
-    headerData.998.value = <meta name="sitelock-site-verification" content="9629" />
+    #headerData.998 = TEXT
+    #headerData.998.value = <meta name="sitelock-site-verification" content="9629" />
 
-    headerData.10 = TEXT
-    headerData.10.value = <script src="https://5f3c395.ccm19.de/app/public/app.js?apiKey=49babf92e99d88aea817c55d9f8d3d19a45279ffffc7a86b&amp;domain=2e9229d&amp;lang=de_DE" referrerpolicy="origin"></script>
+    #headerData.10 = TEXT
+    #headerData.10.value = <script src="https://5f3c395.ccm19.de/app/public/app.js?apiKey=49babf92e99d88aea817c55d9f8d3d19a45279ffffc7a86b&amp;domain=2e9229d&amp;lang=de_DE" referrerpolicy="origin"></script>
 
     meta {
         X-UA-Compatible = IE=edge,chrome=1
