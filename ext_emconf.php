@@ -9,7 +9,7 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'templates',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-11.5.99',
+            'typo3' => '12.4.0-12.4.99',
             'fluid_styled_content' => '11.5.0-11.5.99',
             'rte_ckeditor' => '11.5.0-11.5.99',
         ],
@@ -22,9 +22,6 @@ $EM_CONF[$_EXTKEY] = [
         ],
     ],
     'state' => 'stable',
-    'uploadfolder' => 0,
-    'createDirs' => '',
-    'clearCacheOnLoad' => 1,
     'author' => 'Sebastian During',
     'author_email' => 'sebastian.during@svbalingen.de',
     'author_company' => 'Schachverein Balingen e.V.',
