@@ -32,8 +32,8 @@ plugin.tt_news.pid_list = 312
 config {
     doctype = html5
     xmlprologue = none
-    htmlTag_setParams = lang="de"
-    locale_all = de_DE.UTF-8
+    #htmlTag_setParams = lang="de"
+    #locale_all = de_DE.UTF-8
     intTarget = _self
     extTarget = _blank
     disablePrefixComment = 1
@@ -50,9 +50,9 @@ config {
 }
 
 ### Standardsprache deutsch wird festgelegt ###
-config.sys_language_uid = 0
-config.language = de
-config.locale_all = de_DE
+#config.sys_language_uid = 0
+#config.language = de
+#config.locale_all = de_DE
 date_stdWrap.strftime = %d. %B %Y
 time_stdWrap.strftime= %H:%M
 
