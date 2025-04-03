@@ -1,3 +1,13 @@
+.pagination > li > a, .pagination > li > span {
+	float: unset !important;
+}
+
+.news-list-item img {
+	width:100%;
+	height:auto;
+}
+
+
 /* headerbackground */
 .headerbackground {
 	background-image: url(../Images/logos/schach_header.20160819.jpg) !important;
