@@ -225,3 +225,4 @@ ul#ergebnisse_navigation li:first-child:before { content: ""}
 @media print {
 	.aufstellungname { display:inline; }
 }
+
