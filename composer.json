@@ -6,6 +6,7 @@
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
     "require": {
+        "twbs/bootstrap": "5.3.8"
     },
     "autoload": {
         "psr-4": {
