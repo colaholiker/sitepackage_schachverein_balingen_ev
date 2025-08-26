@@ -18,7 +18,7 @@
         }
     },
     "require-dev": {
-        "ssch/typo3-rector": "^2.11"
+        "ssch/typo3-rector": "^2.11 || ^3.0"
     },
     "config": {
         "allow-plugins": {
