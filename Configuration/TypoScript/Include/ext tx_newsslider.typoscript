@@ -1,0 +1,7 @@
+plugin.tx_newsslider.view {
+	layoutRootPaths.382 = EXT:sitepackage_schachverein_balingen_ev/Resources/Private/Layouts/tx_newslider
+	partialRootPaths.382 = EXT:sitepackage_schachverein_balingen_ev/Resources/Private/Partial/tx_newslider 
+	templateRootPaths.382 = EXT:sitepackage_schachverein_balingen_ev/Resources/Private/Template/tx_newslider
+	
+}
+
