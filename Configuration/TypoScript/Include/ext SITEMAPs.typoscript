@@ -90,7 +90,6 @@ plugin.tx_seo.config {
             news_ergebnisse_2022_2023 < .news_aktuell
             news_ergebnisse_2022_2023.config.pid = 1454
 
-
             news_ergebnisse_2023_2024 < .news_aktuell
             news_ergebnisse_2023_2024.config.pid = 1605
             news_ergebnisse_2024_2025 < .news_aktuell
@@ -105,6 +104,10 @@ plugin.tx_seo.config {
             news_ergebnisse_2028_2029.config.pid = 1610
             news_ergebnisse_2029_2030 < .news_aktuell
             news_ergebnisse_2029_2030.config.pid = 1611
+
+
+            news_ergebnisse_nu < .news_aktuell
+            news_ergebnisse_nu.config.pid = 1707
         }
     }
 }
