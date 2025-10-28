@@ -1,2 +1,0 @@
-rules:
-    - Ssch\TYPO3Rector\PHPStan\Rules\AddChangelogDocBlockForRectorClassRule
