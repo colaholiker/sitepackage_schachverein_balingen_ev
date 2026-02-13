@@ -129,7 +129,7 @@ page {
         svbalingen.media = all
 
 	svbalingen_scss =  EXT:sitepackage_schachverein_balingen_ev/Resources/Private/Scss/main.scss 
-	svbalingen.media = all
+	svbalingen_scss.media = all
 
         bootstrap = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/bootstrap.css
         bootstrap.media = all
