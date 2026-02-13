@@ -1,0 +1,23 @@
+body {
+  .news {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          figure {
+            aspect-ratio: 4/3;
+
+            picture {
+              display: block;
+              height: 100%;        
+
+              img {
+                height: 100%;
+                object-fit: cover;
+              } 
+            }
+          }
+        }
+      }
+    }
+  }
+}
