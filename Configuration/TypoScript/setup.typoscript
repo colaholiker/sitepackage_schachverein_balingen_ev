@@ -128,6 +128,9 @@ page {
         svbalingen = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/svbalingen.css
         svbalingen.media = all
 
+	svbalingen_scss =  EXT:sitepackage_schachverein_balingen_ev/Resources/Private/Scss/main.scss 
+	svbalingen.media = all
+
         bootstrap = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/bootstrap.css
         bootstrap.media = all
 
@@ -140,16 +143,9 @@ page {
         webslidemenu = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/webslidemenu.css
         webslidemenu.media = all
 
-        #nivoslider = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/nivo-slider.css
-        #nivoslider.media = all
-
-        #nivoslider_light = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/nivo-slider-themes/light/light.css
-        #nivoslider_light.media = all
-
         fontawesome = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Fonts/font-awesome/css/font-awesome.min.css
         fontawesome.media = all
 
-        #erg_extern = https://css.svw.info/my_patches_20081229/ed.css
         erg_extern = EXT:sitepackage_schachverein_balingen_ev/Resources/Public/Css/ed.css
         erg_extern.media = all
     }
