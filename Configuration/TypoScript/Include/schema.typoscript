@@ -1,9 +1,10 @@
-page.400 = SCHEMA
-page.400 {
-    type = WebSite
-    properties {
-        name.field = seo_title // title
-        description.field = description
+page {
+    400 = SCHEMA
+    400 {
+        type = LegalService
+        properties {
+            name = Schachverein Balingen e.V.
+            description.field = description
+        }
     }
-
 }
