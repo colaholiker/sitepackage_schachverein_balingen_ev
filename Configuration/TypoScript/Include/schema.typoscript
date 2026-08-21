@@ -1,0 +1,18 @@
+page = PAGE
+page.10 = SCHEMA
+page.10 {
+    type = WebSite
+    properties {
+        name.field = seo_title // title
+        description.field = description
+    }
+    typolink {
+        parameter = t3://page?uid={site : rootPageId}
+        parameter.insertData = 1
+        forceAbsoluteUrl = 1
+        returnLast = url
+    }
+
+}
+
+
