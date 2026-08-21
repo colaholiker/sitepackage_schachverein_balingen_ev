@@ -1,5 +1,5 @@
-page.5 = SCHEMA
-page.5 {
+page.400 = SCHEMA
+page.400 {
     type = WebSite
     properties {
         name.field = seo_title // title
