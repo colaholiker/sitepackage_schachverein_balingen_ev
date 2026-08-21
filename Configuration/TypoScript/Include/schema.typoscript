@@ -2,9 +2,7 @@ page.5 = SCHEMA
 page.5 {
     type = WebSite
     properties {
-        #name.field = seo_title // title
-        name= TEXT
-        name = banane
+        name.field = seo_title // title
         description.field = description
     }
 
