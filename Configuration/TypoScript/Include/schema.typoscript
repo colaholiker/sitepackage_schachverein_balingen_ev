@@ -1,4 +1,54 @@
 page {
+
+    #
+    # Aktuelle TYPO3-Seite
+    #
+    390 = SCHEMA
+    390 {
+        # Auswahl aus:
+        # Structured Data -> Type of web page
+        type.field = tx_schema_webpagetype
+        type.ifEmpty = WebPage
+
+        # Eindeutige ID der aktuellen Seite
+        id {
+            typolink {
+                parameter.data = page:uid
+                forceAbsoluteUrl = 1
+                returnLast = url
+            }
+        }
+
+        properties {
+            name.field = seo_title // title
+
+            url {
+                typolink {
+                    parameter.data = page:uid
+                    forceAbsoluteUrl = 1
+                    returnLast = url
+                }
+            }
+
+            #
+            # ContactPage -> Schachverein
+            #
+            about = SCHEMA
+            about {
+                id = https://www.svbalingen.de/#organization
+
+                if {
+                    value = ContactPage
+                    equals.field = tx_schema_webpagetype
+                }
+            }
+        }
+    }
+
+
+    #
+    # Schachverein Balingen e.V.
+    #
     400 = SCHEMA
     400 {
         type = SportsOrganization
@@ -7,6 +57,7 @@ page {
         properties {
             name = Schachverein Balingen e.V.
             alternateName = SV Balingen
+
             description = Schachverein Balingen e.V. – Schachverein für Erwachsene, Jugendliche und Kinder in Balingen.
 
             url = https://www.svbalingen.de/
@@ -16,6 +67,7 @@ page {
             email = info@svbalingen.de
 
             foundingDate = 1932
+
             sport = Chess
 
             nonprofitStatus = https://schema.org/DERegisteredAssociationCharity
