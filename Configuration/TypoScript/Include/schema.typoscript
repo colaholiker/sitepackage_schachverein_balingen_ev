@@ -2,19 +2,10 @@ page.5 = SCHEMA
 page.5 {
     type = WebSite
     properties {
-        name.field = seo_title // title
+        #name.field = seo_title // title
+        name= TEXT
+        name = banane
         description.field = description
     }
 
-
-    typolink {
-        parameter = t3://page?uid={site : rootPageId}
-        parameter.insertData = 1
-        forceAbsoluteUrl = 1
-        returnLast = url
-    }
-
 }
-
-page.4 = TEXT
-page.4.value = banane
