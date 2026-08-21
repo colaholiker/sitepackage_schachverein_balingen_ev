@@ -1,19 +1,26 @@
 page {
 
     #
+    # ------------------------------------------------------------
     # Aktuelle TYPO3-Seite
+    # ------------------------------------------------------------
     #
     390 = SCHEMA
     390 {
+
         #
-        # Backend:
+        # Wert aus:
         # Structured Data -> Type of web page
+        #
+        # Falls nichts ausgewählt wurde:
+        # WebPage
         #
         type.field = tx_schema_webpagetype
         type.ifEmpty = WebPage
 
+
         #
-        # Eindeutige URL der aktuellen Seite als @id
+        # Eindeutige @id der aktuellen Seite
         #
         id {
             typolink {
@@ -23,21 +30,24 @@ page {
             }
         }
 
+
         properties {
 
             #
-            # TYPO3 SEO-Titel,
-            # Fallback auf normalen Seitentitel
+            # TYPO3 SEO-Titel
+            # Fallback: normaler Seitentitel
             #
             name.field = seo_title // title
+
 
             #
             # TYPO3 Meta Description
             #
             description.field = description
 
+
             #
-            # Aktuelle kanonische Seiten-URL
+            # URL der aktuellen Seite
             #
             url {
                 typolink {
@@ -47,8 +57,10 @@ page {
                 }
             }
 
+
             #
-            # Kontaktseite mit dem Verein verbinden
+            # Eine ContactPage bezieht sich auf
+            # den Schachverein Balingen e.V.
             #
             about = SCHEMA
             about {
@@ -63,43 +75,49 @@ page {
     }
 
 
+
     #
+    # ------------------------------------------------------------
     # Schachverein Balingen e.V.
+    # ------------------------------------------------------------
     #
     400 = SCHEMA
     400 {
         type = SportsOrganization
 
         #
-        # Stabile ID des Vereins
+        # Stabile, seitenübergreifende ID
         #
         id = https://www.svbalingen.de/#organization
+
 
         properties {
 
             name = Schachverein Balingen e.V.
+
             alternateName = SV Balingen
+
 
             description = Schachverein Balingen e.V. – Schachverein für Erwachsene, Jugendliche und Kinder in Balingen.
 
+
             url = https://www.svbalingen.de/
+
 
             logo = https://www.svbalingen.de/_assets/254f43d4a5741df16583934520525aa6/Images/logos/logo.png
 
+
             email = info@svbalingen.de
+
 
             foundingDate = 1932
 
-            sport = Chess
-
-            #
-            # Gemeinnütziger eingetragener Verein
-            #
-            nonprofitStatus = https://schema.org/DERegisteredAssociationCharity
 
 
             #
+            # ----------------------------------------------------
             # Vereins-/Kontaktadresse
+            # ----------------------------------------------------
             #
             address = SCHEMA
             address {
@@ -115,8 +133,11 @@ page {
             }
 
 
+
             #
-            # Allgemeiner Kontakt
+            # ----------------------------------------------------
+            # Allgemeiner Vereinskontakt
+            # ----------------------------------------------------
             #
             contactPoint = SCHEMA
             contactPoint {
@@ -130,8 +151,11 @@ page {
             }
 
 
+
             #
-            # Lokaler Tätigkeitsbereich
+            # ----------------------------------------------------
+            # Tätigkeitsbereich
+            # ----------------------------------------------------
             #
             areaServed = SCHEMA
             areaServed {
@@ -143,8 +167,11 @@ page {
             }
 
 
+
             #
+            # ----------------------------------------------------
             # Mitgliedschaft
+            # ----------------------------------------------------
             #
             memberOf = SCHEMA
             memberOf {
@@ -160,36 +187,29 @@ page {
             }
 
 
-            #
-            # Inhaltliche Schwerpunkte
-            #
-            knowsAbout {
-                10 = Schach
-                20 = Jugendschach
-                30 = Turnierschach
-                40 = Schnellschach
-                50 = Blitzschach
-                60 = Chess960
-            }
-
 
             #
+            # ----------------------------------------------------
             # Offizielle externe Profile
+            # ----------------------------------------------------
             #
             sameAs {
                 10 = https://www.instagram.com/schachvereinbalingen/
                 20 = https://lichess.org/team/schachverein-balingen-ev
 
-                # Facebook später ergänzen:
+                # Falls eine offizielle Facebook-Seite vorhanden ist:
                 # 30 = https://www.facebook.com/...
             }
         }
     }
 
 
+
     #
+    # ------------------------------------------------------------
     # Spielstätte Erwachsene
     # Zollernschloss Balingen
+    # ------------------------------------------------------------
     #
     410 = SCHEMA
     410 {
@@ -197,10 +217,15 @@ page {
 
         id = https://www.svbalingen.de/#place-zollernschloss
 
+
         properties {
 
             name = Zollernschloss Balingen
 
+
+            #
+            # Adresse
+            #
             address = SCHEMA
             address {
                 type = PostalAddress
@@ -216,6 +241,7 @@ page {
 
 
             #
+            # Vereinsabend Erwachsene
             # Donnerstag 19:30 - 23:30 Uhr
             #
             openingHoursSpecification = SCHEMA
@@ -232,9 +258,12 @@ page {
     }
 
 
+
     #
+    # ------------------------------------------------------------
     # Spielstätte Jugend
     # Realschule Balingen
+    # ------------------------------------------------------------
     #
     420 = SCHEMA
     420 {
@@ -242,10 +271,15 @@ page {
 
         id = https://www.svbalingen.de/#place-realschule
 
+
         properties {
 
             name = Realschule Balingen
 
+
+            #
+            # Adresse
+            #
             address = SCHEMA
             address {
                 type = PostalAddress
@@ -261,6 +295,7 @@ page {
 
 
             #
+            # Jugendtraining
             # Samstag 14:00 - 16:00 Uhr
             #
             openingHoursSpecification = SCHEMA
