@@ -2,14 +2,11 @@ page {
     400 = SCHEMA
     400 {
         type = SportsOrganization
-
-        # Wird als "@id" ausgegeben
         id = https://www.svbalingen.de/#organization
 
         properties {
             name = Schachverein Balingen e.V.
             alternateName = SV Balingen
-
             description = Schachverein Balingen e.V. – Schachverein für Erwachsene, Jugendliche und Kinder in Balingen.
 
             url = https://www.svbalingen.de/
@@ -19,7 +16,6 @@ page {
             email = info@svbalingen.de
 
             foundingDate = 1932
-
             sport = Chess
 
             nonprofitStatus = https://schema.org/DERegisteredAssociationCharity
