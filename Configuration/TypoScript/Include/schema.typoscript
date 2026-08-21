@@ -3,9 +3,14 @@ page {
     400 {
         type = SportsOrganization
 
+        # Wird als "@id" ausgegeben
+        id = https://www.svbalingen.de/#organization
+
         properties {
             name = Schachverein Balingen e.V.
             alternateName = SV Balingen
+
+            description = Schachverein Balingen e.V. – Schachverein für Erwachsene, Jugendliche und Kinder in Balingen.
 
             url = https://www.svbalingen.de/
 
@@ -13,50 +18,48 @@ page {
 
             email = info@svbalingen.de
 
-            description = Schachverein Balingen e.V. – Schachverein für Erwachsene, Jugendliche und Kinder in Balingen.
-
             foundingDate = 1932
-
-            nonprofitStatus = DERegisteredAssociationCharity
 
             sport = Chess
 
+            nonprofitStatus = https://schema.org/DERegisteredAssociationCharity
+
+            address = SCHEMA
             address {
                 type = PostalAddress
 
-                streetAddress = Gaibernstraße 8
-                postalCode = 72336
-                addressLocality = Balingen
-                addressRegion = Baden-Württemberg
-                addressCountry = DE
+                properties {
+                    streetAddress = Gaibernstraße 8
+                    postalCode = 72336
+                    addressLocality = Balingen
+                    addressRegion = Baden-Württemberg
+                    addressCountry = DE
+                }
             }
 
-            areaServed {
-                type = City
-                name = Balingen
-            }
-
+            contactPoint = SCHEMA
             contactPoint {
                 type = ContactPoint
 
-                contactType = general inquiries
-                email = info@svbalingen.de
-                telephone = +49 176 61282573
-                availableLanguage = de
+                properties {
+                    contactType = general inquiries
+                    email = info@svbalingen.de
+                    availableLanguage = de
+                }
+            }
+
+            areaServed = SCHEMA
+            areaServed {
+                type = City
+
+                properties {
+                    name = Balingen
+                }
             }
 
             sameAs {
                 10 = https://www.instagram.com/schachvereinbalingen/
                 20 = https://lichess.org/team/schachverein-balingen-ev
-            }
-
-            knowsAbout {
-                10 = Schach
-                20 = Jugendschach
-                30 = Turnierschach
-                40 = Schnellschach
-                50 = Blitzschach
-                60 = Chess960
             }
         }
     }
