@@ -5,12 +5,16 @@ page {
     #
     390 = SCHEMA
     390 {
-        # Auswahl aus:
+        #
+        # Backend:
         # Structured Data -> Type of web page
+        #
         type.field = tx_schema_webpagetype
         type.ifEmpty = WebPage
 
-        # Eindeutige ID der aktuellen Seite
+        #
+        # Eindeutige URL der aktuellen Seite als @id
+        #
         id {
             typolink {
                 parameter.data = page:uid
@@ -20,8 +24,21 @@ page {
         }
 
         properties {
+
+            #
+            # TYPO3 SEO-Titel,
+            # Fallback auf normalen Seitentitel
+            #
             name.field = seo_title // title
 
+            #
+            # TYPO3 Meta Description
+            #
+            description.field = description
+
+            #
+            # Aktuelle kanonische Seiten-URL
+            #
             url {
                 typolink {
                     parameter.data = page:uid
@@ -31,7 +48,7 @@ page {
             }
 
             #
-            # ContactPage -> Schachverein
+            # Kontaktseite mit dem Verein verbinden
             #
             about = SCHEMA
             about {
@@ -52,9 +69,14 @@ page {
     400 = SCHEMA
     400 {
         type = SportsOrganization
+
+        #
+        # Stabile ID des Vereins
+        #
         id = https://www.svbalingen.de/#organization
 
         properties {
+
             name = Schachverein Balingen e.V.
             alternateName = SV Balingen
 
@@ -70,8 +92,15 @@ page {
 
             sport = Chess
 
+            #
+            # Gemeinnütziger eingetragener Verein
+            #
             nonprofitStatus = https://schema.org/DERegisteredAssociationCharity
 
+
+            #
+            # Vereins-/Kontaktadresse
+            #
             address = SCHEMA
             address {
                 type = PostalAddress
@@ -85,6 +114,10 @@ page {
                 }
             }
 
+
+            #
+            # Allgemeiner Kontakt
+            #
             contactPoint = SCHEMA
             contactPoint {
                 type = ContactPoint
@@ -96,6 +129,10 @@ page {
                 }
             }
 
+
+            #
+            # Lokaler Tätigkeitsbereich
+            #
             areaServed = SCHEMA
             areaServed {
                 type = City
@@ -105,9 +142,136 @@ page {
                 }
             }
 
+
+            #
+            # Mitgliedschaft
+            #
+            memberOf = SCHEMA
+            memberOf {
+                type = SportsOrganization
+
+                id = https://www.svw.info/#organization
+
+                properties {
+                    name = Schachverband Württemberg e.V.
+                    alternateName = SVW
+                    url = https://www.svw.info/
+                }
+            }
+
+
+            #
+            # Inhaltliche Schwerpunkte
+            #
+            knowsAbout {
+                10 = Schach
+                20 = Jugendschach
+                30 = Turnierschach
+                40 = Schnellschach
+                50 = Blitzschach
+                60 = Chess960
+            }
+
+
+            #
+            # Offizielle externe Profile
+            #
             sameAs {
                 10 = https://www.instagram.com/schachvereinbalingen/
                 20 = https://lichess.org/team/schachverein-balingen-ev
+
+                # Facebook später ergänzen:
+                # 30 = https://www.facebook.com/...
+            }
+        }
+    }
+
+
+    #
+    # Spielstätte Erwachsene
+    # Zollernschloss Balingen
+    #
+    410 = SCHEMA
+    410 {
+        type = Place
+
+        id = https://www.svbalingen.de/#place-zollernschloss
+
+        properties {
+
+            name = Zollernschloss Balingen
+
+            address = SCHEMA
+            address {
+                type = PostalAddress
+
+                properties {
+                    streetAddress = Schloßstraße 6
+                    postalCode = 72336
+                    addressLocality = Balingen
+                    addressRegion = Baden-Württemberg
+                    addressCountry = DE
+                }
+            }
+
+
+            #
+            # Donnerstag 19:30 - 23:30 Uhr
+            #
+            openingHoursSpecification = SCHEMA
+            openingHoursSpecification {
+                type = OpeningHoursSpecification
+
+                properties {
+                    dayOfWeek = https://schema.org/Thursday
+                    opens = 19:30
+                    closes = 23:30
+                }
+            }
+        }
+    }
+
+
+    #
+    # Spielstätte Jugend
+    # Realschule Balingen
+    #
+    420 = SCHEMA
+    420 {
+        type = Place
+
+        id = https://www.svbalingen.de/#place-realschule
+
+        properties {
+
+            name = Realschule Balingen
+
+            address = SCHEMA
+            address {
+                type = PostalAddress
+
+                properties {
+                    streetAddress = Teckstraße 20
+                    postalCode = 72336
+                    addressLocality = Balingen
+                    addressRegion = Baden-Württemberg
+                    addressCountry = DE
+                }
+            }
+
+
+            #
+            # Samstag 14:00 - 16:00 Uhr
+            #
+            openingHoursSpecification = SCHEMA
+            openingHoursSpecification {
+                type = OpeningHoursSpecification
+
+                properties {
+                    dayOfWeek = https://schema.org/Saturday
+                    opens = 14:00
+                    closes = 16:00
+                }
             }
         }
     }
