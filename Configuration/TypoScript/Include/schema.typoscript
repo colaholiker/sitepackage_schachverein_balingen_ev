@@ -1,10 +1,63 @@
 page {
     400 = SCHEMA
     400 {
-        type = LegalService
+        type = SportsOrganization
+
         properties {
             name = Schachverein Balingen e.V.
-            description.field = description
+            alternateName = SV Balingen
+
+            url = https://www.svbalingen.de/
+
+            logo = https://www.svbalingen.de/_assets/254f43d4a5741df16583934520525aa6/Images/logos/logo.png
+
+            email = info@svbalingen.de
+
+            description = Schachverein Balingen e.V. – Schachverein für Erwachsene, Jugendliche und Kinder in Balingen.
+
+            foundingDate = 1932
+
+            nonprofitStatus = DERegisteredAssociationCharity
+
+            sport = Chess
+
+            address {
+                type = PostalAddress
+
+                streetAddress = Gaibernstraße 8
+                postalCode = 72336
+                addressLocality = Balingen
+                addressRegion = Baden-Württemberg
+                addressCountry = DE
+            }
+
+            areaServed {
+                type = City
+                name = Balingen
+            }
+
+            contactPoint {
+                type = ContactPoint
+
+                contactType = general inquiries
+                email = info@svbalingen.de
+                telephone = +49 176 61282573
+                availableLanguage = de
+            }
+
+            sameAs {
+                10 = https://www.instagram.com/schachvereinbalingen/
+                20 = https://lichess.org/team/schachverein-balingen-ev
+            }
+
+            knowsAbout {
+                10 = Schach
+                20 = Jugendschach
+                30 = Turnierschach
+                40 = Schnellschach
+                50 = Blitzschach
+                60 = Chess960
+            }
         }
     }
 }
